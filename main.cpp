@@ -8,7 +8,7 @@ string *positions;
 int numberOfCards = 0;
 int counter = 1;
 
-/*Method used to check if any cards are repeated in the current "positions" array*/
+// Function used to check if any cards are repeated in the current "positions" array
 bool repeatedCards(string cards[]) {
 
     bool booleanValue = true;
@@ -24,11 +24,11 @@ bool repeatedCards(string cards[]) {
 }
 
 
-/* I use a recursive method, since nesting for loops inside
-* each other looks nasty and also requires one to know how many cards we will
-* combine, and if you add more cards, you would need to nest more for loops. 
-* Using a recursive method looks better, and gives you the freedom to combine as
-* many cards as you want without changing code. */
+/* I use a recursive function, since nesting for loops inside
+* each other requires us to know how many cards we will
+* combine, and if we add more cards, we would need to nest more for loops. 
+* Using a recursive method looks better, and gives us the freedom to combine as
+* many cards as we want without changing code. */
 void combinations(int locNumber) {
 
     for (int valueNumber = 0; valueNumber < numberOfCards; valueNumber++) {
